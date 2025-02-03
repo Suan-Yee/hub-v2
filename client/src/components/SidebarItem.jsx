@@ -14,7 +14,9 @@ const SidebarItem = ({ icon, text, active, collapsed }) => {
       {!collapsed && <span className="ml-3">{text}</span>}
       {collapsed && (
         <span
-          className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1 bg-gray-900 text-white text-xs rounded shadow opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap"
+          className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 px-2 py-1
+           bg-gray-900 text-white text-xs rounded shadow opacity-0 group-hover:opacity-100 
+           transition-opacity duration-200 pointer-events-none whitespace-nowrap"
         >
           {text}
         </span>

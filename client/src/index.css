@@ -4,3 +4,7 @@
 html {
     font-family: "Roboto", sans-serif !important;
 }
+
+body {
+    @apply text-gray-600;
+}
