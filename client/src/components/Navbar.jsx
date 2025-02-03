@@ -9,7 +9,7 @@ import NavbarItem from './NavbarItem'
 
 const Navbar = () => {
   return (
-    <div className='w-full h-14 md:h-16 flex items-center justify-between bg-white border-b-0 shadow-sm'>
+    <div className='w-full h-14 md:h-16 2xl:px-8 flex items-center justify-between bg-white border-b-0 shadow-sm'>
         <Link to='/' className='flex items-center gap-1 text-2xl font-bold'>
             <img src={logo} className="logo" alt="Logo" width={48} height={48} />
             <span className='font-semibold text-md'>IDK</span>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="flex items-center border-2 border-gray-500 bg-transparent w-36 h-12 rounded-full px-2">
             <NavbarItem  src={profile} size="w-9 h-9" />
             <span className="mx-3 text-black text-xl">|</span>
-            <span className="text-black text-lg">John</span>           
+            <span className="text-black text-lg">Suan</span>           
           </div>
 
         </div>
