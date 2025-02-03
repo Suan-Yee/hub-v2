@@ -15,7 +15,7 @@ const Sidebar = () => {
                 </button>
             </div>
 
-            <ul className="mt-2">
+            <ul className="">
               <SidebarItem icon={<House size={20}/>} text='Home' active collapsed={clickChevron}/>
               <SidebarItem icon={<User size={20}/>} text='Profile' collapsed={clickChevron}/>
               <SidebarItem icon={<BookmarkCheck size={20}/>} text='Bookmarks' collapsed={clickChevron}/>
