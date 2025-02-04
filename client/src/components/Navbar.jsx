@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import profile from '../assets/profile.png'
 import NavbarItem from './NavbarItem'
-<<<<<<< Updated upstream
 import { Bell, Rocket, UserPlus } from 'lucide-react'
-=======
-import { Bell } from 'lucide-react'
->>>>>>> Stashed changes
 
 const Navbar = () => {
   return (
@@ -22,15 +18,9 @@ const Navbar = () => {
           <NavbarItem  src={Rocket} size="w-7 h-7" /> 
           <NavbarItem  src={UserPlus} size="w-7 h-7" />
 
-<<<<<<< Updated upstream
           <div className="relative flex items-center justify-center w-9 h-9 rounded-full cursor-pointer">
             <div className="w-7 h-7 rounded-full overflow-hidden text-gray-600">
-              <Bell className="object-cover w-full h-full"/>
-=======
-          <div className="relative flex items-center justify-center w-9 h-9 rounded-full">
-            <div className="w-7 h-7 rounded-full overflow-hidden">
-              <Bell className="object-cover w-full h-full text-gray-600" />
->>>>>>> Stashed changes
+              <Bell className="object-cover w-full h-full" />
             </div>
             <span className="absolute top-1.5 right-2 transform translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-blue-500 text-white text-xs rounded-full w-3 h-3">
               1
