@@ -7,4 +7,5 @@ html {
 
 body {
     @apply text-gray-600;
+    background-color: rgb(251, 251, 251);
 }

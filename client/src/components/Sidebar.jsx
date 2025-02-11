@@ -11,6 +11,7 @@ const Sidebar = () => {
       <div className={`h-screen ${clickChevron ? 'w-15' : 'w-52'}`}>
           <div className='h-full flex flex-col border-r-0 shadow-sm'>
               <div className='p-3 pb-2 flex justify-end items-center'>
+                { clickChevron ? ' ' : <span className='mr-4 text-md'>Collpase</span>}
                   <button className='p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100' onClick={() => setClickChevron((prev) => !prev)}>
                     { clickChevron ? <ChevronLast /> : <ChevronFirst />}    
                   </button>
