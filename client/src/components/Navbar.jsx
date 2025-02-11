@@ -20,7 +20,7 @@ const Navbar = () => {
 
           <div className="relative flex items-center justify-center w-9 h-9 rounded-full cursor-pointer">
             <div className="w-7 h-7 rounded-full overflow-hidden text-gray-600">
-              <Bell className="object-cover w-full h-full"/>
+              <Bell className="object-cover w-full h-full" />
             </div>
             <span className="absolute top-1.5 right-2 transform translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-blue-500 text-white text-xs rounded-full w-3 h-3">
               1

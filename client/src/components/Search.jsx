@@ -14,7 +14,7 @@ const Search = () => {
   return (
     <div className='flex justify-start items-center gap-6 w-1/2 '>
 
-        <Dropdown size="w-24" options={choiceOptions} defaultOption='Sort by' />
+        <Dropdown size="w-28" options={choiceOptions} defaultOption='Sort by' />
 
         <SearchBox placeholder='Search a Content' />
     </div>
