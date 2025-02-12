@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <div className='min-w-[13rem] h-screen'>
-      <div className={`h-screen ${clickChevron ? 'w-15' : 'w-52'}`}>
+      <div className={`h-screen ${clickChevron ? 'w-15' : 'w-58'}`}>
           <div className='h-full flex flex-col border-r-0 shadow-sm'>
               <div className='p-3 pb-2 flex justify-end items-center'>
                 { clickChevron ? ' ' : <span className='mr-4 text-md'>Collpase</span>}
