@@ -5,7 +5,7 @@ const ImageGrid = ({ images }) => {
   
     if (imageCount === 1) {
       return (
-        <div className="w-full">
+        <div className="w-full ">
           <img
             src={images[0]}
             alt="Post content"
@@ -21,7 +21,7 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-42 object-cover rounded-md"
+              className="w-full h-42 lg:h-52 object-cover rounded-md"
             />
           ))}
         </div>
@@ -56,7 +56,7 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-36 object-cover rounded-md"
+              className="w-full h-36 lg:h-46 object-cover rounded-md"
             />
           ))}
         </div>
@@ -70,14 +70,14 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-36 object-cover rounded-md"
+              className="w-full h-36 lg:h-46 object-cover rounded-md"
             />
           ))}
           <div className="relative">
             <img
               src={images[3]}
               alt="Post content 4"
-              className="w-full h-36 object-cover rounded-md filter blur-sm"
+              className="w-full h-36 lg:h-46 object-cover rounded-md filter blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center rounded-md">
               <span className="text-white font-semibold text-xl drop-shadow-lg">

@@ -5,6 +5,7 @@ import owl from '../assets/post/owl.avif'
 import robot from '../assets/post/robot.avif'
 import sand from '../assets/post/sand.avif'
 import sky from '../assets/post/sky.avif'
+import Search from '../components/Search'
 
 const Test = () => {
 
@@ -17,7 +18,7 @@ const Test = () => {
 
   return (
     <div>
-      {/* <Search /> */}
+      <Search />
       <div className='h-full border-b border-gray-400 shadow-2xl my-4'></div>
       <Post images={images} content={content} group="beast" / >
       <Post content={content} / >

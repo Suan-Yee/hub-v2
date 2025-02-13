@@ -30,7 +30,7 @@ const PostInteraction = () => {
             <div className="border-2 rounded-3xl w-full flex items-center px-3 py-1">
                 <input ref={commentInputReft} type="text" placeholder="Write your comment" className="w-full outline-none"/>
                 <Camera className="w-5 h-5 cursor-pointer hover:text-blue-500 ml-3" />
-                <SmilePlus className="w-5 h-5 cursor-pointer hover:text-blue-500 ml-2" />
+                <SmilePlus className="w-5 h-5 cursor-pointer hover:text-blue-500 ml-2 text-yellow-400" />
             </div>
     </div>
     );

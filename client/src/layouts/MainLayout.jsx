@@ -13,12 +13,12 @@ const MainLayout = () => {
 
       <div className="flex ">
         {/* Fixed Sidebar */}
-        <div className="fixed top-16 left-0 h-full w-64">
+        <div className="fixed top-16 left-0 h-full w-64 lg:w-68">
           <Sidebar />
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 ml-80 pt-4 p-4 overflow-y-auto" style={{ marginTop: '4rem' }}>
+        <div className="flex-1 ml-100 lg:ml-120 pt-4 p-4 overflow-y-auto" style={{ marginTop: '4rem' }}>
           <Outlet />
         </div>
 

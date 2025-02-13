@@ -9,7 +9,7 @@ const Post = ({images,content,group}) => {
   const [bookmark,setBookmark] = useState(false);
 
   return (
-    <div className='max-w-sm md:max-w-lg bg-white rounded-2xl p-2 shadow-xl my-3'>
+    <div className='max-w-sm md:max-w-lg lg:max-w-xl bg-white rounded-2xl p-2 shadow-xl my-3'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-3'>
 
