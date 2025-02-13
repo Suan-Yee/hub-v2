@@ -15,16 +15,18 @@ const Test = () => {
   const image2 = [sky];
   const image3 = [robot,car];
   const image4 = [robot,car,owl,sand];
+  const image5 = [sky,sky,owl];
 
   return (
     <div>
-      <Search />
-      <div className='h-full border-b border-gray-400 shadow-2xl my-4'></div>
+      {/* <Search /> */}
+      {/* <div className='h-full border-b border-gray-400 shadow-2xl my-4'></div> */}
       <Post images={images} content={content} group="beast" / >
       <Post content={content} / >
       <Post images={image2} content={content} / >
       <Post images={image3} content={content} / >
       <Post images={image4} content={content} / >
+      <Post images={image5} content={content} / >
     </div>
   )
 }

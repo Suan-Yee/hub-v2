@@ -13,7 +13,7 @@ export default defineConfig({
       fontFamily: {
         sans: ["Roboto", "sans-serif"], 
         poppins: ["Poppins", "sans-serif"], 
-      }
+      },
     }
   }
 })
