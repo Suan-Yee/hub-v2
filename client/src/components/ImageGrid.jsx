@@ -33,7 +33,7 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-32 md:h-38 lg:h-42 2xl:h-52 object-cover rounded-md cursor-pointer"
+              className="w-full h-32 md:h-38 lg:h-42 2xl:h-58 object-cover rounded-md cursor-pointer"
               onClick={() => openCarousel(idx)}
             />
           ))}
@@ -48,7 +48,7 @@ const ImageGrid = ({ images }) => {
                 key={idx}
                 src={img}
                 alt={`Post content ${idx + 1}`}
-                className="w-full h-32 md:h-38 lg:h-42 2xl:h-52 object-cover rounded-md cursor-pointer"
+                className="w-full h-32 md:h-38 lg:h-42 2xl:h-58 object-cover rounded-md cursor-pointer"
                 onClick={() => openCarousel(idx)}
               />
             ))}
@@ -57,7 +57,7 @@ const ImageGrid = ({ images }) => {
             <img
               src={images[2]}
               alt="Post content 3"
-              className="w-full h-36 md:h-40 lg:h-48 2xl:h-54 object-cover rounded-md cursor-pointer"
+              className="w-full h-36 md:h-40 lg:h-48 2xl:h-58 object-cover rounded-md cursor-pointer"
               onClick={() => openCarousel(2)}
             />
           </div>
@@ -71,7 +71,7 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-32 md:h-38 lg:h-42 2xl:h-52 object-cover rounded-md cursor-pointer"
+              className="w-full h-32 md:h-38 lg:h-42 2xl:h-58 object-cover rounded-md cursor-pointer"
               onClick={() => openCarousel(idx)}
             />
           ))}
@@ -85,7 +85,7 @@ const ImageGrid = ({ images }) => {
               key={idx}
               src={img}
               alt={`Post content ${idx + 1}`}
-              className="w-full h-32 md:h-38 lg:h-42 2xl:h-52 object-cover rounded-md cursor-pointer"
+              className="w-full h-32 md:h-38 lg:h-42 2xl:h-58 object-cover rounded-md cursor-pointer"
               onClick={() => openCarousel(idx)}
             />
           ))}
@@ -93,7 +93,7 @@ const ImageGrid = ({ images }) => {
             <img
               src={images[3]}
               alt="Post content 4"
-              className="w-full h-32 md:h-38 lg:h-42 2xl:h-52 object-cover rounded-md filter blur-sm"
+              className="w-full h-32 md:h-38 lg:h-42 2xl:h-58 object-cover rounded-md filter blur-xs"
             />
             <div className="absolute inset-0 flex items-center justify-center rounded-md pointer-events-none">
               <span className="text-white font-semibold text-xl drop-shadow-lg">
@@ -111,13 +111,13 @@ const ImageGrid = ({ images }) => {
           onClick={() => setIsCarouselOpen(false)} 
         >
           <div
-            className="relative max-w-3xl max-h-full"
+            className="relative max-w-xs sm:max-w-md md:max-w-xl lg:max-w-3xl  2xl:max-w-5xl max-h-full"
             onClick={(e) => e.stopPropagation()} 
           >
             <img
               src={images[currentIndex]}
               alt={`Post content ${currentIndex + 1}`}
-              className="max-w-full max-h-screen object-contain rounded-2xl"
+              className="max-w-full max-h-screen object-contain rounded-2xl "
             />
             {/* Close Button */}
             <button

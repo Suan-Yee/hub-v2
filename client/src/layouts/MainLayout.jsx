@@ -13,7 +13,7 @@ const MainLayout = () => {
 
       <div className="flex ">
         {/* Fixed Sidebar */}
-        <div className="fixed top-16 left-0 h-full md:w-48 lg:w-58 2xl:w-68">
+        <div className="hidden md:block fixed top-16 left-0 h-full md:w-48 lg:w-58 2xl:w-68">
           <Sidebar />
         </div>
 
