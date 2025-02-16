@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ImageGrid = ({ images }) => {
@@ -11,6 +11,18 @@ const ImageGrid = ({ images }) => {
     setCurrentIndex(index);
     setIsCarouselOpen(true);
   };
+
+  useEffect(() => {
+    if (isCarouselOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isCarouselOpen]);
 
   return (
     <div>
