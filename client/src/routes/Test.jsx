@@ -9,6 +9,7 @@ import Search from '../components/Search'
 import TrendingPosts from '../components/TrendingPost'
 import Activity from '../components/ActivitySystem'
 import ActivitySystem from '../components/ActivitySystem'
+import Messages from '../components/Messages'
 
 const Test = () => {
 
@@ -23,9 +24,9 @@ const Test = () => {
   
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-between">
 
-      <div className="flex-1">
+      <div className="">
         <Post images={images} content={content} group="beast" />
         <Post content={content} />
         <Post images={image2} content={content} />
@@ -36,14 +37,9 @@ const Test = () => {
 
       <div className="">
 
-        <div className="w-89 p-4">
-          <ActivitySystem />
+        <div className="fixed right-5 mr-30 h-auto overflow-y-auto">
+          <Messages />
         </div>
-
-        {/* <div className="bg-white rounded-2xl p-4 shadow-xl">
-          <h2 className="text-2xl font-bold mb-2">No.3</h2>
-          <p>Another highlighted piece of content or suggestion.</p>
-        </div> */}
 
       </div>
     </div>

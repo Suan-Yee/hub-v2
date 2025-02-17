@@ -22,26 +22,26 @@ const ActivityCategory = ({ icon, title, items }) => (
 const ActivitySystem = () => {
   const trendingItems = [
     "#MentalHealthAwareness is trending with 800 posts.",
-    "Most-liked post: 'Morning Yoga Routine' 🧘♀️ (2.3k likes).",
+    "Most-liked post: 'Morning Yoga Routine' (2.3k likes).",
   ];
 
   const communityItems = [
-    "Welcome @NatureLover! 🌿",
-    "New event: Virtual Book Club starts Friday! 📖",
+    "Welcome @NatureLover! ",
+    "New event: Virtual Book Club starts Friday! ",
   ];
 
   const inspirationItems = [
     "Quote: 'The only way to do great work is to love what you do.' – Jobs",
-    "Tutorial: @PhotoGuru’s 'Editing Basics' 📸",
+    "Tutorial: @PhotoGuru’s 'Editing Basics' ",
   ];
 
   const collaborateItems = [
-    "Help build the 'Community Playlist'! 🎵",
-    "Poll: Favorite Travel Destination? ✈️",
+    "Help build the 'Community Playlist'! ",
+    "Poll: Favorite Travel Destination? ",
   ];
 
   return (
-    <div className="bg-white p-4 rounded-2xl shadow-xl">
+    <div className="fixed mr-25 bg-white p-4 rounded-2xl shadow-xl">
       <ActivityCategory icon="🔥" title="Trending" items={trendingItems} />
       <ActivityCategory icon="🎉" title="Community" items={communityItems} />
       <ActivityCategory icon="💡" title="Inspiration" items={inspirationItems} />

@@ -5,6 +5,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout.jsx'
 import Login from './routes/Login.jsx'
 import Test from './routes/Test.jsx'
+import Messages from './components/Messages.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         path: '/test',
         element: <Test />
       },
+      {
+        path: '/messages',
+        element: <Messages />
+      }
     ],
   },
   {
@@ -35,3 +40,5 @@ createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </StrictMode>,
 )
+
+
