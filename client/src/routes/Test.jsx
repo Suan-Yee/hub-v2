@@ -26,7 +26,7 @@ const Test = () => {
   return (
     <div className="flex gap-4 justify-between">
 
-      <div className="">
+      <div className="flex-1">
         <Post images={images} content={content} group="beast" />
         <Post content={content} />
         <Post images={image2} content={content} />
@@ -35,12 +35,10 @@ const Test = () => {
         <Post images={image5} content={content} />
       </div>
 
-      <div className="">
-
-        <div className="fixed right-5 mr-30 h-auto overflow-y-auto">
+      <div className="hidden md:block">
+        <div className="fixed right-5 mt-3">
           <Messages />
         </div>
-
       </div>
     </div>
   );

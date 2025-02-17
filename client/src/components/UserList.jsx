@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UserList = ({src,name,active}) => {
+const UserList = ({src,name,active,onClick }) => {
     return (
-        <div className="flex items-center mt-4 hover:bg-gray-100 rounded-md cursor-pointer">
+        <div onClick={onClick} className="flex items-center mt-4 hover:bg-gray-100 rounded-md cursor-pointer">
 
             <div className="relative">
                 <img src={src} alt="Kanye West" className="w-10 h-10 rounded-full" />

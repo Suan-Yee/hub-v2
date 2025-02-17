@@ -1,11 +1,18 @@
 import { Filter, Search } from 'lucide-react'
 import React, { useState } from 'react'
 import UserList from './UserList';
+import ChatModal from './ChatModal';
 
 const Messages = () => {
 
     const [selectedTab, setSelectedTab] = useState('Primary');
 
+    const [chatUser, setChatUser] = useState(null);
+
+    const handleUserClick = (user) => {
+        setChatUser(user);
+        console.log('Hello')
+    };
 
     return (
         <div className='w-86 text-sm p-3 bg-white rounded-2xl h-full'>
@@ -43,11 +50,24 @@ const Messages = () => {
 
             </div>
             
-            <UserList src="https://wallpapers.com/images/high/weird-profile-pictures-eetnpw9ya9ipjrka.webp" name="Kanye West" active={true} />
-            <UserList src="https://preview.redd.it/drake-the-type-of-guy-to-post-a-selfie-with-him-in-a-beauty-v0-571py2j45vcb1.jpg?width=640&crop=smart&auto=webp&s=36d64deac92996c78ddd6fcc6b496b8dfa2704d5" name="Drake" active={true}/>
-            <UserList src="https://i.redd.it/qzlmkz0tgi811.jpg" name="Slim Shady" active={false} />
+            <UserList
+                src="https://wallpapers.com/images/high/weird-profile-pictures-eetnpw9ya9ipjrka.webp"
+                name="Kanye West"
+                active={true}
+                onClick={() =>
+                handleUserClick({
+                    name: 'Kanye West',
+                    profile:
+                    'https://wallpapers.com/images/high/weird-profile-pictures-eetnpw9ya9ipjrka.webp',
+                })
+                }
+            />
+            {/* <UserList src="https://preview.redd.it/drake-the-type-of-guy-to-post-a-selfie-with-him-in-a-beauty-v0-571py2j45vcb1.jpg?width=640&crop=smart&auto=webp&s=36d64deac92996c78ddd6fcc6b496b8dfa2704d5" name="Drake" active={true}/>
+            <UserList src="https://i.redd.it/qzlmkz0tgi811.jpg" name="Slim Shady" active={false} /> */}
 
             <h2 className='mt-3 font-medium'>View All</h2>
+
+            {chatUser && <ChatModal user={chatUser} onClose={() => setChatUser(null)} />}
         </div>
     )
 }
