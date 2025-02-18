@@ -1,18 +1,55 @@
 import { Camera, Heart, MessageCircle, Repeat, SmilePlus } from 'lucide-react';
 import React, { useRef, useState } from 'react';
 import EmojiPicker from 'emoji-picker-react';
+import CommentModal from './CommentModal';
 
 const PostInteraction = () => {
   const [react, setReact] = useState(false);
   const commentInputReft = useRef(null);
   const [comment, setComment] = useState('');
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+  const [showComments, setShowComments] = useState(false);
 
   const handleCommentClick = () => {
     if (commentInputReft.current) {
       commentInputReft.current.focus();
+      setShowComments(true);
     }
   };
+
+  const initialComments = [
+    {
+      id: 1,
+      user: {
+        name: 'Alice',
+        profile: 'https://via.placeholder.com/40',
+      },
+      text: 'Great post!',
+      time: '10:00 AM',
+      replies: [
+        {
+          id: 2,
+          user: {
+            name: 'Bob',
+            profile: 'https://via.placeholder.com/40',
+          },
+          text: 'I agree with Alice.',
+          time: '10:05 AM',
+          replies: [],
+        },
+      ],
+    },
+    {
+      id: 3,
+      user: {
+        name: 'Charlie',
+        profile: 'https://via.placeholder.com/40',
+      },
+      text: 'Thanks for sharing!',
+      time: '10:10 AM',
+      replies: [],
+    },
+  ];
 
   const onEmojiClick = (emojiData, event) => {
     setComment((prev) => prev + emojiData.emoji);
@@ -70,6 +107,9 @@ const PostInteraction = () => {
           </div>
         )}
       </div>
+      {showComments && (
+        <CommentModal onClose={() => setShowComments(false)} initialComments={initialComments} />
+      )}
     </div>
   );
 };

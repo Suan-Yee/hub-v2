@@ -7,6 +7,7 @@ import PostInteraction from './PostInteraction';
 const Post = ({images,content,group}) => {
 
   const [bookmark,setBookmark] = useState(false);
+  
 
   return (
     <div className='max-w-sm md:max-w-md lg:max-w-lg 2xl:max-w-2xl bg-white rounded-2xl p-2 shadow-xl my-3'>

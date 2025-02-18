@@ -62,10 +62,32 @@ const Messages = () => {
                 })
                 }
             />
-            {/* <UserList src="https://preview.redd.it/drake-the-type-of-guy-to-post-a-selfie-with-him-in-a-beauty-v0-571py2j45vcb1.jpg?width=640&crop=smart&auto=webp&s=36d64deac92996c78ddd6fcc6b496b8dfa2704d5" name="Drake" active={true}/>
-            <UserList src="https://i.redd.it/qzlmkz0tgi811.jpg" name="Slim Shady" active={false} /> */}
+            <UserList 
+                src="https://preview.redd.it/drake-the-type-of-guy-to-post-a-selfie-with-him-in-a-beauty-v0-571py2j45vcb1.jpg?width=640&crop=smart&auto=webp&s=36d64deac92996c78ddd6fcc6b496b8dfa2704d5"
+                name="Drake"
+                active={false}
+                onClick={() =>
+                handleUserClick({
+                    name: 'Drake',
+                    profile:
+                    'https://preview.redd.it/drake-the-type-of-guy-to-post-a-selfie-with-him-in-a-beauty-v0-571py2j45vcb1.jpg?width=640&crop=smart&auto=webp&s=36d64deac92996c78ddd6fcc6b496b8dfa2704d5',
+                })
+                }
+            />
+            <UserList
+                src="https://i.redd.it/qzlmkz0tgi811.jpg"
+                name="Slim Shady"
+                active={true}
+                onClick={() =>
+                handleUserClick({
+                    name: 'Slim Shady',
+                    profile:
+                    'https://i.redd.it/qzlmkz0tgi811.jpg',
+                })
+                }
+            />
 
-            <h2 className='mt-3 font-medium'>View All</h2>
+            {/* <h2 className='mt-3 font-medium'>View All</h2> */}
 
             {chatUser && <ChatModal user={chatUser} onClose={() => setChatUser(null)} />}
             {/* <ChatModal user={chatUser} onClose={() => setChatUser(null)} /> */}

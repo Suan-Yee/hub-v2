@@ -51,7 +51,7 @@ const ChatModal = ({ user, onClose }) => {
           </div>
 
           <button className="ml-auto" onClick={onClose}>
-            <X size={24} />
+            <X size={24} className='cursor-pointer' />
           </button>
 
         </div>
