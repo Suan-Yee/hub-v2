@@ -1,4 +1,4 @@
-import { Filter, Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 import React, { useState } from 'react'
 import UserList from './UserList';
 import ChatModal from './ChatModal';
@@ -15,7 +15,7 @@ const Messages = () => {
     };
 
     return (
-        <div className='w-86 text-sm p-3 bg-white rounded-2xl h-full'>
+        <div className='md:w-72 lg:w-86 2xl:w-86 text-sm p-3 bg-white rounded-2xl h-full'>
             <div className='mb-3'>
                 <h2 className='font-semibold'>Messages</h2>
 

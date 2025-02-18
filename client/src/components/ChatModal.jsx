@@ -41,7 +41,7 @@ const ChatModal = ({ user, onClose }) => {
 
   return (
     <div className="fixed inset-0 backdrop-blur-sm bg-opacity-50 flex justify-center items-center z-50 ">
-      <div className="bg-white w-full max-w-lg h-150 flex flex-col rounded-2xl shadow-2xl scrollbar-hide">
+      <div className="bg-white w-full max-w-lg lg:h-120 lg:mt-20 2xl:h-150 flex flex-col rounded-2xl shadow-2xl scrollbar-hide">
         {/* Header: Receiver Info */}
         <div className="flex items-center px-3 py-1.5 bg-[#F3F4F6] rounded-t-2xl">
           <img src={user.profile} alt={user.name} className="w-10 h-10 rounded-full object-cover mr-3" />
