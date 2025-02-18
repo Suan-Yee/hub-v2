@@ -68,6 +68,7 @@ const Messages = () => {
             <h2 className='mt-3 font-medium'>View All</h2>
 
             {chatUser && <ChatModal user={chatUser} onClose={() => setChatUser(null)} />}
+            {/* <ChatModal user={chatUser} onClose={() => setChatUser(null)} /> */}
         </div>
     )
 }

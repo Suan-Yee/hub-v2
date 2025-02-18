@@ -9,3 +9,11 @@ body {
     @apply text-gray-600;
     background-color: rgb(251, 251, 251);
 }
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+  
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

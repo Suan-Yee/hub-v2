@@ -5,10 +5,6 @@ import owl from '../assets/post/owl.avif'
 import robot from '../assets/post/robot.avif'
 import sand from '../assets/post/sand.avif'
 import sky from '../assets/post/sky.avif'
-import Search from '../components/Search'
-import TrendingPosts from '../components/TrendingPost'
-import Activity from '../components/ActivitySystem'
-import ActivitySystem from '../components/ActivitySystem'
 import Messages from '../components/Messages'
 
 const Test = () => {
@@ -36,7 +32,7 @@ const Test = () => {
       </div>
 
       <div className="hidden md:block">
-        <div className="fixed right-5 mt-3">
+        <div className="fixed right-5 h-auto 2xl:mr-30 mt-3">
           <Messages />
         </div>
       </div>
